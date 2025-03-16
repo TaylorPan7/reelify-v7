@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #333;
+    transition: width 0.3s;
+    overflow: hidden;
+}
+
+#sidebar:hover {
+    width: 200px;
+}
+
+#sidebar img {
+    width: 40px;
+    margin: 20px;
+}
+
+#content {
+    margin-left: 60px;
+    padding: 20px;
+}
+
+#toggle-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.plan {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.savings {
+    color: green;
+}
+
+/* Themes */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.high-contrast {
+    background-color: #000000;
+    color: #ffff00;
+}
+
+body.grey-scale {
+    filter: grayscale(100%);
+} 
